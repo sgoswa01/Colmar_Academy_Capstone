@@ -1,0 +1,403 @@
+/* Universal */
+
+html {
+  font-size: 12px;
+  color: #2C3539;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.75rem;
+  padding-bottom: 12px;
+}
+
+h1, h2, h3 {
+  font-family: "Noto Sans", sans-serif;
+}
+
+p, span, li {
+  font-size: 1.25rem;
+  font-family: "Questrial", sans-serif;
+}
+
+p {
+  padding-bottom: 8px;
+}
+
+.section {
+  display: flex;
+  padding: 32px 0px;
+  max-width: 100%;
+}
+
+.container .image img {
+  max-width: 100%;
+}
+
+.feature {
+  padding: 0px 24px;
+  max-width: 60%;
+}
+
+.sidebar {
+  max-width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 24px;
+}
+
+.sidebar .container {
+  display: flex;
+  border: 1px solid #E5E4E2;
+}
+
+.sidebar .container:hover {
+  background-color: #E5E4E2;
+}
+
+.sidebar .image {
+  width: 35%;
+  margin: 16px;
+}
+
+.sidebar .content {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  justify-content: center;
+  padding-right: 16px;
+}
+
+@media only screen and (max-width: 725px) {
+  .section {
+    padding: 0px;
+  }
+
+  .feature {
+    max-width: 100%;
+  }
+
+  .sidebar {
+    max-width: 100%;
+    padding: 16px;
+  }
+
+  .sidebar .container {
+    display: block;
+    border: none;
+  }
+
+  .sidebar .content {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .sidebar .image {
+    width: 100%;
+    margin: 0px;
+  }
+}
+
+/* New Fonts */
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans'), local('NotoSans'), url(https://fonts.gstatic.com/s/notosans/v7/o-0IIpQlx3QUlC5A4PNr5TRA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Noto Sans Bold'), local('NotoSans-Bold'), url(https://fonts.gstatic.com/s/notosans/v7/o-0NIpQlx3QUlC5A4PNjXhFVatyB1Wk.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: 'Questrial';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Questrial'), local('Questrial-Regular'), url(https://fonts.gstatic.com/s/questrial/v7/QdVUSTchPBm7nuUeVf70viFl.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Heading */
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  margin: 0px 24px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.navigation li {
+  display: inline;
+  padding-left: 16px;
+  font-size: 1.5rem;
+}
+
+.colmar {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-left: 8px;
+}
+
+.academy {
+  font-size: 2rem;
+  color: grey;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: 725px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    background-color: white;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+
+/* Banner */
+
+.banner .section {
+  align-items: center;
+}
+
+.banner {
+  background-color: #E5E4E2;
+}
+
+.banner .container {
+  max-width: 60%;
+  padding-left: 24px;
+}
+
+.banner .content {
+  padding-left: 32px;
+  max-width: 25%;
+}
+
+.banner h1, .banner h3 {
+  padding-bottom: 24px;
+}
+
+.button h3 {
+  color: white;
+  background-color: #959492;
+  text-align: center;
+  padding: 12px 0px;
+}
+
+@media only screen and (max-width: 725px) {
+  .banner .section {
+    flex-direction: column;
+  }
+
+  .banner .container {
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .banner .content {
+    max-width: 100%;
+    padding: 32px;
+  }
+}
+
+/* Information */
+
+.information .section {
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.feature img {
+  max-width: 100%;
+  padding-bottom: 32px;
+}
+
+.feature h2 {
+  padding-bottom: 24px;
+}
+
+.feature p {
+  padding-bottom: 12px;
+}
+
+.feature .author {
+  font-size: 1rem;
+}
+
+.content .read {
+  color: #1589FF;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 725px) {
+  .information .feature {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+}
+
+/* Courses */
+
+.courses {
+  max-width: 100%;
+  padding-top: 32px;
+  background: #E5E4E2;
+}
+
+.courses h2 {
+  text-align: center;
+}
+
+.courses .section {
+  display: block;
+}
+
+.row {
+  margin: 0px 72px 32px 72px;
+  display: flex;
+}
+
+.courses .container {
+  margin: 0px 16px;
+  background-color: white;
+  max-width: 30%;
+}
+
+.courses .content {
+  padding: 16px 16px 24px 16px;
+}
+
+.mobile-courses {
+  display: none;
+}
+
+@media only screen and (max-width: 725px) {
+  .courses {
+    background-color: white;
+    border-top: 1px solid #E5E4E2;
+  }
+
+  .row {
+    display: none;
+  }
+
+  .mobile-courses {
+    display: block;
+    padding: 16px 16px 24px 16px;
+  }
+
+  .mobile-courses h3 {
+    background-color: #E5E4E2;
+    padding: 24px;
+    margin-bottom: 8px;
+  }
+}
+
+/* Thesis */
+
+.thesis {
+  padding-top: 32px;
+}
+
+.thesis h2 {
+  text-align: center;
+}
+
+.feature .video {
+  max-width: 100%;
+  padding-bottom: 24px;
+}
+
+.feature h3 {
+  padding-bottom: 8px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .thesis .section {
+    max-width: 100%;
+  }
+
+  .thesis .sidebar {
+    display: none;
+  }
+
+  .thesis .feature {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .thesis {
+    border-top: 1px solid #E5E4E2;
+  }
+
+  .thesis h2 {
+    padding-bottom: 16px;
+  }
+
+  .thesis .content {
+    display: none;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid #E5E4E2;
+}
+
+@media only screen and (max-width: 725px) {
+  .menu {
+    display: none;
+  }
+}
